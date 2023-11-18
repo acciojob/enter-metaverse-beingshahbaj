@@ -10,5 +10,5 @@ function enterMetaverse() {
 
    
     let parent = document.getElementsByTagName("body")[0];
-   parent.insertBefore(para , btn);
+    parent.insertBefore(para , btn);
 }
