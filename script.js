@@ -1,14 +1,22 @@
-//your JS code here. If required.
 function enterMetaverse() {
+           
+            let statusParagraph = document.getElementById("status");
 
-	let btn = document.getElementById("enterBtn");
-    let para = document.createElement("h1");
-	para.id = "status";
-	
-    para.textContent = "Entered Metaverse";
+           
+            if (statusParagraph.textContent === "Enter the Metaverse") {
+               
+                statusParagraph.textContent = "Entered Metaverse";
 
+               
+                let h1Tag = document.createElement("h1");
 
-   
-    let parent = document.getElementsByTagName("body")[0];
-    parent.insertBefore(para , btn);
-}
+                
+                h1Tag.textContent = "Entered Metaverse";
+
+               
+                statusParagraph.parentNode.replaceChild(h1Tag, statusParagraph);
+            } else {
+               
+                alert("Already entered the Metaverse!");
+            }
+        }
