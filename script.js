@@ -9,6 +9,7 @@ function enterMetaverse() {
 
                
                 let h1Tag = document.createElement("h1");
+				h1Tag.id = "status"
 
                 
                 h1Tag.textContent = "Entered Metaverse";
