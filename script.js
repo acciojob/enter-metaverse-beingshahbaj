@@ -3,6 +3,7 @@ function enterMetaverse() {
 
 	let btn = document.getElementById("enterBtn");
     let para = document.createElement("h1");
+	para.id = "status";
 	
     para.textContent = "Entered Metaverse";
 
